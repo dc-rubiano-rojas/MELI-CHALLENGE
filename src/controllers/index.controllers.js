@@ -1,20 +1,17 @@
-const needle = require('needle')
+const { getCategorieMeliConsumer } = require('../consumer/index.consumer')
 const { createClient } = require('redis')
 
+
 const getCategorie = async(id) => {
-    const apiResponse = await needle(
-        'get',
-        `https://df1f5e23-b062-4e9b-be7b-20396b1953b7.mock.pstmn.io/categories/${id}`
-    )
+    const apiResponse = getCategorieMeliConsumer(id);
 
     try {
         const client = createClient({
-            host: 'localhost',
+            host: 'redis',
             port: 6379
         })
 
         await client.connect();
-
 
         const saveResult = await client.set(
             'routes',
@@ -22,10 +19,10 @@ const getCategorie = async(id) => {
         );
 
         console.log(saveResult)
-        return apiResponse
     } catch (error) {
         console.log(error)
     }
+    return apiResponse
 
 }
 

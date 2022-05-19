@@ -3,7 +3,6 @@ const cors = require('cors')
 const ratelimit = require('express-rate-limit')
     // const responseTime = require("response-time");
     // const { createClient } = require("redis");
-const SingletonRedis = require('../src/database/database')
 
 async function main() {
 
@@ -20,10 +19,10 @@ async function main() {
     app.use(limiter)
     app.set('trust proxy', 1) // trust first proxy
 
-    // Routes
+    // // Routes
     app.use('/', require('./routes/index.routes'))
 
-    // Enable cors
+    // // Enable cors
     app.use(cors())
 
     // await SingletonRedis.getInstance()

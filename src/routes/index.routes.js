@@ -1,10 +1,8 @@
 const express = require('express')
 const router = express.Router()
-const needle = require('needle')
 const apiCache = require('apicache').middleware
 const rateLimit = require('express-rate-limit')
 const { MemoryStore } = require('express-rate-limit')
-const { createClient } = require('redis')
 const { getCategorie } = require('../controllers/index.controllers')
 
 const apiLimiter = rateLimit({
