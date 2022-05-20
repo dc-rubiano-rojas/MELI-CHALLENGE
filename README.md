@@ -15,4 +15,5 @@ You can see here when route name is save by redis:
 
 This is my design to this challenge:
 
-![proxy-solution](https://user-images.githubusercontent.com/62356192/169143912-a0433db8-6e69-47c0-985a-7c8075a7fb8e.png)
+
+![MELI-challenge-Page-2 drawio](https://user-images.githubusercontent.com/62356192/169434093-d95a7883-ebef-48ee-b886-19cd76395462.png)
