@@ -14,8 +14,8 @@ const getCategorie = async(id) => {
         await client.connect();
 
         const saveResult = await client.set(
-            'routes',
-            JSON.stringify(`/categories/${id}`)
+            'response',
+            JSON.stringify(apiResponse)
         );
 
         console.log(saveResult)
