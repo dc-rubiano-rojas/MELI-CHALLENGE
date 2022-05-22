@@ -16,4 +16,3 @@ You can see here when route name is save by redis:
 This is my design to this challenge:
 
 
-![MELI-challenge-Page-1 drawio](https://user-images.githubusercontent.com/62356192/169710128-4c473e0a-d11a-4a5d-92be-79c6b5f22bfb.png)
