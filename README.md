@@ -10,7 +10,8 @@ You could run the project just by running the commands 'npm install' and 'npm st
 
 You can see here when route name is save by redis:
 
-<img width="855" alt="redis-commander-2" src="https://user-images.githubusercontent.com/62356192/169143825-d34c22dc-860e-4d8c-b886-225a2eef6ad0.png">
+<img width="1254" alt="Screen Shot 2022-05-22 at 1 58 32 PM" src="https://user-images.githubusercontent.com/62356192/169711428-33c478b4-568e-46ec-ae57-057756dffadb.png">
+
 
 
 This is my design to this challenge:
